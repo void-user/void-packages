@@ -23,7 +23,6 @@ build_options_default="gui"
 
 pre_configure() {
 	local conf="--prefix=/usr"
-	conf+=" --with-qt4=no"
 	conf+=" --disable-systemd"
 	conf+=" --with-boost=${XBPS_CROSS_BASE}/usr"
 	conf+=" --with-boost-libdir=${XBPS_CROSS_BASE}/usr/lib"
